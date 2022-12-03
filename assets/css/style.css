@@ -1,0 +1,436 @@
+/*
+  Theme Name: Name - Multipurpose HTML Template
+  Author: mdsalim400@gmail.com
+  Support: admin@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1.header-section
+2.banner-section
+3.about-section
+4.my-skils-section
+5.my-work-section
+6.testimonial
+7.footer-section
+*/
+
+
+
+/* 1. Theme default css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Raleway&display=swap');
+
+body{
+	font-family: 'Raleway', sans-serif; 
+}
+
+h1,h2,h3,h4,h5,h6,a{font-family: 'Poppins', sans-serif; font-weight: 700;}
+
+
+
+a,a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
+
+
+ul {margin: 0px;padding: 0px;}
+li {list-style: none}
+
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+
+/* custom-class-here */
+.section-title {
+	font-size: 60px;
+}
+
+
+/* header-section-start */
+.header-section.header-sticky.sticky {
+	position: fixed;
+	left: 0;
+	right: 0;
+	background: #fff;
+	z-index: 9999;
+}
+.main-manu ul li {
+	display: inline-block;
+	position: relative;
+}
+.main-manu ul li a::before{
+	position: absolute;
+	content: '';
+	bottom: -5px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #2196f3;
+	transition: .3s;
+}
+.main-manu ul li a:hover::before{width: 70%;}
+.main-manu ul li a {
+	padding-right:30px;
+	color: #000a2d;
+	transition: .3ss;
+}
+
+.main-manu ul li a:hover{color: #2196f3;}
+/* header-section-end */
+
+
+
+/* banner-section-start */
+.banner-section {
+	background-image: url(../img/banner-img.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-bottom: 5px solid #2196f3;
+	padding: 180px 0;
+}
+
+
+.banner-contet p.p-title {
+	font-size: 20px;
+	color: #efefef;
+	margin-bottom: 12px;
+}
+
+.banner-contet p {
+	font-size: 18px;
+	color: #efefef;
+	margin-bottom: 0;
+	line-height: 30px;
+	font-weight: 400;
+}
+.banner-content h3 {
+	font-size: 42px;
+	color: #fff;
+	text-transform: capitalize;
+}
+.banner-content h3 span {
+	color: #2196f3;
+}
+
+.banner-content a {
+	padding: 15px 30px;
+	background-color: #2196f3;
+	display: inline-block;
+	margin-top: 30px;
+	border-radius: 30px;
+	margin-right: 26px;
+	line-height: 1;
+	color: #fff;
+	text-transform: uppercase;
+}
+/* banner-section-end */
+
+
+
+
+/* about-section-start */
+.about-content h3 {
+	font-size: 35px;
+	color: 292f3b;
+	margin-bottom: 25px;
+}
+.about-content h3 span {
+	margin-top: 20px;
+	display: block;
+	font-size: 17px;
+	font-weight: 400;
+	color: #2196f3;
+}
+
+
+.about-content p {
+	line-height: 26px;
+	font-size: 14px;
+	color: #959bb3;
+	text-transform: capitalize;
+}
+.about-content a {
+	padding: 15px 30px;
+	background-color: #2196f3;
+	margin-top: 50px;
+	display: inline-block;
+	border-radius: 30px;
+	line-height: 1;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+
+
+.about-img a img {
+	width: 100%;
+}
+
+/* about-section-end */
+
+
+
+/* my-skills-section-start */
+.my-skills-content{
+	position: relative;
+	padding: 15px 0;
+}
+
+.my-skills-content a {
+	font-size: 16px;
+	color: #333333;
+}
+
+.absulote-1 {
+	position: absolute;
+	right: 0;
+	top: 17px;
+}
+
+.absulote-2 {
+	position: absolute;
+	right: 44px;
+	top: 17px;
+}
+
+.absulote-3 {
+	position: absolute;
+	right: 88px;
+	top: 17px;
+}
+
+.absulote-4 {
+	position: absolute;
+	right: 135px;
+	top: 17px;
+}
+
+
+.border-1 {
+	width: 100%;
+	height: 3px;
+	display: block;
+	background: #2196f3;
+	margin-top: 20px;
+}
+.border-2 {
+	width: 94%;
+	height: 3px;
+	display: block;
+	background: #2196f3;
+	margin-top: 20px;
+}
+
+.border-3 {
+	width: 85%;
+	height: 3px;
+	display: block;
+	background: #2196f3;
+	margin-top: 20px;
+}
+
+.border-4 {
+	width: 77%;
+	height: 3px;
+	display: block;
+	background: #2196f3;
+	margin-top: 20px;
+}
+
+
+.section-btn a {
+	padding: 12px 30px;
+	background: #46a8f5;
+	color: #fff;
+	border-radius: 30px;
+	margin-right: 28px;
+	line-height: 1;
+	display: inline-block;
+	margin-top: 60px;
+}
+
+/* my-skills-section-end */
+
+
+
+
+
+
+
+
+/* my-work-section-start */
+
+.my-work-img img {
+	width: 100%;
+}
+
+.my-work-content{
+	margin-top: 60px;
+	margin-left: 40px;
+	margin-bottom: 70px;
+}
+
+.my-work-content h3 {
+	font-size: 30px;
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+.my-work-content p {
+	font-size: 14px;
+	line-height: 30px;
+	color: #6e7797;
+}
+.my-work-content a {
+	padding: 13px 30px;
+	background-color: #46a8f5;
+	font-size: 14px;
+	border-radius: 30px;
+	margin-top: 26px;
+	display: inline-block;
+	color: #fff;
+}
+
+/* my-work-section-end */
+
+
+
+/* more-work-section-start */
+
+.more-work-manu button {
+	border: none;
+	padding-right: 25px;
+	color: #000a2d;
+	background-color: transparent;
+	transition: .3s;
+	position: relative;
+}
+.more-work-manu button.active{
+	color: #2196f3;
+}
+.more-work-manu button::before{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	content: "";
+	width: 00%;
+	height: 2px;
+	background-color: #2196f3;
+	transform-origin: right;
+	transition: .3s;
+}
+.more-work-manu button:hover::before{
+	color: #2196f3;
+	width: 100%;
+}
+.more-work-single-item {
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+.more-work-single-item img {
+	width: 100%;
+}
+/* more-work-section-end */
+
+
+
+
+/* testimonial-section-start */
+
+
+.testimonial-icon i {
+	color: #2582eb;
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.testimonial-text {
+	margin-left: 30px;
+}
+
+.testimonial-text h4 {
+	font-size: 20px;
+	color: #292f3b;
+	margin-bottom: 5px;
+}
+.testimonial-text p {
+	font-size: 14px;
+	color: #59606a;
+	margin-bottom: 11px;
+}
+
+
+/* testimonial-section-end */
+
+
+/* footer-section-start */
+.footer-content p {
+	font-size: 14px;
+	line-height: 26px;
+	color: #a4acc9;
+	margin-top: 20px;
+}
+.footer-icon a i.fa-facebook{
+	color: #46a8f5;
+}
+.footer-icon a {
+	color: #a4acc9;
+	margin-right: 15px;
+	font-size: 17px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.footer-title h4 {
+	font-size: 40px;
+	line-height: 48px;
+	color: #ffffff;
+}
+
+.contact-list h5 {
+	font-size: 14px;
+	line-height: 50px;
+	color: #afb5c9;
+}
+.contact-list ul li a {
+	font-size: 20px;
+	color: #ffffff;
+	padding: 10px 0;
+}
+
+/* footer-section-end */
+
+
+
+
+
+
+
